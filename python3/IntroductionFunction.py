@@ -22,3 +22,16 @@ def basic_window(width,height,font='TNR'):
     print(width, height, font)
 basic_window(350, 500)
 basic_window(350, 500, font='courier')
+
+print '\n'
+# Global and Local Variables
+#   Global variable
+x = 13
+def example(modify):
+    print(modify)
+    modify += 10
+    print(modify)
+    return modify
+
+x = example(x)
+print(x)
